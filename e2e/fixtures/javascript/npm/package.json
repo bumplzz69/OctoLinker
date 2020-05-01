@@ -1,10 +1,16 @@
 {
-    "dependencies": {
-        "//": "@OctoLinkerResolve(https://github.com/lodash/lodash)",
-        "lodash": "^4.17.5"
-    },
-    "devDependencies": {
-        "//": "@OctoLinkerResolve(https://github.com/jashkenas/underscore)",
-        "underscore": "1.2.3"
-    }
+  "dependencies": {
+    "//": "@OctoLinkerResolve(https://github.com/lodash/lodash)",
+    "lodash": "^4.17.5",
+    "snyk": "^1.316.1"
+  },
+  "devDependencies": {
+    "//": "@OctoLinkerResolve(https://github.com/jashkenas/underscore)",
+    "underscore": "1.2.3"
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
